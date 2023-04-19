@@ -6,7 +6,7 @@ Allows you to quickly create a simple form with a custom design. The generated f
 
 ## How it works?
 
-1. Follow the link - [Link]()
+1. Follow the link - [SimpleFeedBack](https://simple-feed-back.vercel.app/)
 2. Click on the **"CREATE NEW FORM"** button in the upper right corner 
 3. Fill out the form that appears in accordance with the fields
 
