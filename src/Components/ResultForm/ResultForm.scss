@@ -1,0 +1,107 @@
+.resultform {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+
+    & .generator-body {
+        margin-top: 2%;
+        display: flex;
+        justify-content: center;
+       
+
+        & .body-form {
+            padding: 15px 30px;
+            display: flex;
+            flex-direction: column;
+
+            & h1 {
+                text-align: center;
+                letter-spacing: 2px;
+                margin-bottom: 30px;
+                font-weight: 500;
+                color: #fff;
+            }
+
+            & .form-main {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+
+                & h2 {
+                    margin-bottom: 5px;
+                    font-weight: normal;
+                    color: #fff;
+
+                    & span {
+                        font-style: italic;
+                        font-weight: 200;
+                        font-size: 16px;
+                    }
+                }
+
+                & .main-block {
+                    margin-bottom: 30px;
+                    display: flex;
+
+                    & .block-create {
+                        outline: none;
+                        cursor: pointer;
+                        letter-spacing: 1px;
+                        color: #fff;
+                        font-size: 28px;
+                        border: 1px solid #fff;
+                        padding: 5px 15px;
+
+                        &:hover {
+                            transition: .1s;
+                            transform: scale(1.1);
+                        }
+                    }
+
+
+                    & input {
+                        margin-left: 0px;
+                        padding: 5px 10px;
+                        outline: none;
+                        font-size: 22px;
+                    }   
+
+                    & span {
+                        margin-top: 5px;
+                        letter-spacing: 1px;
+                        cursor: pointer;
+                        margin-right: 15px;
+                        font-weight: normal;
+                        font-size: 20px;
+                        padding: 5px 10px;
+                        border: 1px solid #fff;
+                        color: #fff;
+                    }
+
+
+                    & textarea {
+                        padding: 5px 10px;
+                        font-size: 18px;
+                        outline: none;
+                        resize: vertical;
+                    }
+
+                }
+
+            }
+        }
+    }
+
+    & .resultform-info {
+        font-size: 14px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        color: #fff;
+
+        & a {
+            text-decoration: none;
+        }
+    }
+
+}
