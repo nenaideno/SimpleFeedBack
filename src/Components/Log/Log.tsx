@@ -9,7 +9,7 @@ const Log = (props: any) => {
                 <td>{e.id}</td>
                 <td>{e.title}</td>
                 <td onClick={() => {navigator.clipboard.writeText(e.formLink); alert("Адрес Скопирован")}} id={e.formLink && 'table-link'}>{e.formLink ? e.formLink : "Not found"}</td>
-                <td onClick={() => props.deleteFormAC(e.id)} id='table-delete'>Delete</td>
+                <td onClick={() => props.deleteFormR(e.id)} id='table-delete'>Delete</td>
             </tr>
         )
     })

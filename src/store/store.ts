@@ -1,14 +1,10 @@
-import { applyMiddleware, combineReducers, createStore } from "redux";
-import thunk from "redux-thunk";
+import {configureStore} from "@reduxjs/toolkit"
+import formsSlice from "./slices/formsSlice"
 
-// reducers
-import generatorReducer from "./reducers/generatorReducer";
-import formsReducer from "./reducers/formsReducer";
+const rtkstore = configureStore({
+    reducer: {
+        forms: formsSlice,
+    }
+})
 
-
-const store = createStore(combineReducers({
-    generator: generatorReducer,
-    forms: formsReducer,
-}), applyMiddleware(thunk))
-
-export default store;
+export default rtkstore

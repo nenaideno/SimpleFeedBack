@@ -19,7 +19,7 @@ const Generator = (props: any) => {
         data.email = email;
         data.phone = phone;
         data.formLink = `${window.location.origin}/form/${data.id}`
-        props.addFormAC(data)
+        props.addFormR(data)
         navigate(`/form/${data.id}`)
     }
 
