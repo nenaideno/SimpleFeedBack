@@ -1,12 +1,12 @@
 import { compose } from "redux"
 import Log from "./Log"
 import { connect } from "react-redux"
-import { deleteFormAC } from "../../store/reducers/formsReducer"
+import { deleteFormR } from "../../store/slices/formsSlice"
 
 const LogContainer = (props: any) => {
 
 
-    return <Log deleteFormAC={props.deleteFormAC} forms={props.forms} />
+    return <Log deleteFormR={props.deleteFormR} forms={props.forms} />
 }
 
 const mapStateToProps = (state: any) => {
@@ -15,4 +15,4 @@ const mapStateToProps = (state: any) => {
     }
 }
 
-export default compose(connect(mapStateToProps, {deleteFormAC}))(LogContainer)
+export default compose(connect(mapStateToProps, {deleteFormR}))(LogContainer)

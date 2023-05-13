@@ -3,12 +3,12 @@ import {compose} from 'redux'
 import Generator from "./Generator"
 
 // thunks
-import { addFormAC,  } from "../../store/reducers/formsReducer"
+import { addFormR,  } from "../../store/slices/formsSlice"
 
 const GeneratorContainer = (props: any) => {
 
     const formsCount = props.forms.length
-    return <Generator  formsCount={formsCount} addFormAC={props.addFormAC} />
+    return <Generator  formsCount={formsCount} addFormR={props.addFormR} />
 }
 
 const mapStateToProps = (state: any) => {
@@ -17,4 +17,4 @@ const mapStateToProps = (state: any) => {
     }
 }
 
-export default compose(connect(mapStateToProps, {addFormAC}))(GeneratorContainer)
+export default compose(connect(mapStateToProps, {addFormR}))(GeneratorContainer)
